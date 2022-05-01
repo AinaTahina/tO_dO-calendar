@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <script src="./bootstrap/jquery.min.js"></script>
+    <script src="./bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="to_do_style.css">
+    <title>calendar</title>
+</head>
+
+<body>
+	<center>
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Open modal</button>
+	</center>
+
+	<!-- modal -->
+
+	<%- include('modal'); %>
+
+
+    <div class="main">
+        <div class="calendar">
+
+            <div class="month">
+                <div class="prev_date_btn"></div>
+				<div class="date">
+					<h1></h1>
+					<p>date du jour</p>
+				</div>
+				<div class="next_date_btn"></div>
+            </div>
+
+            <div class="week">
+				<div>Lun</div>
+				<div>Mar</div>
+				<div>Mer</div>
+				<div>Jeu</div>
+				<div>Ven</div>
+				<div>Sam</div>
+				<div>Dim</div>
+            </div>
+
+            <form action="/" method="post" class="date_form">
+                <div class="days">
+
+                </div>
+
+                <input type="text" name="date" value="" class="hidden">
+            </form>
+			
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
